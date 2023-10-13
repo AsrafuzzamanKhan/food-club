@@ -1,7 +1,7 @@
 
 
-const MenuItem = ({ item }) => {
-    const { image, name, price, recipe } = item
+const Offers = ({ offer }) => {
+    const { image, name, price, recipe } = offer
     return (
         <div className='flex space-x-2'>
             <img style={{ borderRadius: '0 200px 200px 200px', objectFit: 'contain' }} className='w-[100px]' src={image} alt="" />
@@ -14,4 +14,4 @@ const MenuItem = ({ item }) => {
     );
 };
 
-export default MenuItem;
+export default Offers;
