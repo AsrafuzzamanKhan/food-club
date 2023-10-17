@@ -3,9 +3,12 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const menuItems = <React.Fragment>
+        <li>    <NavLink to='/'>Home</NavLink></li>
+        <li>   <NavLink to='/menu'>Menu</NavLink></li>
+        <li> <NavLink to='/order'>Order</NavLink></li>
 
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to='/menu'>Menu</NavLink>
+
+
 
 
     </React.Fragment>
