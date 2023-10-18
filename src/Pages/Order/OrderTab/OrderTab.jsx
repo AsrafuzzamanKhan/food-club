@@ -1,5 +1,5 @@
 
-import FoodCard from '../../../components/SectionTitle/FoodCard/FoodCard';
+import FoodCard from '../../../components/FoodCard/FoodCard';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
