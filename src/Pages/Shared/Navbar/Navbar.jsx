@@ -2,9 +2,12 @@ import React from 'react';
 import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { AuthContext } from '../../../providers/AuthProvider';
+import { FaShoppingCart } from 'react-icons/fa';
+import useCart from '../../../hooks/useCart';
 
 const Navbar = () => {
-    const { user, logOut } = useContext(AuthContext)
+    const { user, logOut } = useContext(AuthContext);
+    const [cart, refetch] = useCart()
     console.log(user)
     const handleLogOut = () => {
         logOut()
@@ -20,12 +23,20 @@ const Navbar = () => {
         <li><NavLink to='/menu'>Menu</NavLink></li>
         <li><NavLink to='/order/salad'>Order</NavLink></li>
         <li><NavLink to='/secret'>Secret</NavLink></li>
+        <li>
+            <NavLink to='/dashboard/mycart'>
+                <button className="btn">
+                    <FaShoppingCart></FaShoppingCart>
+                    <div className="badge badge-secondary">
 
+                        {cart?.length || 0}
+                    </div>
+                </button>
+            </NavLink>
+        </li>
         {
             user ? <>
-                <li>
-                    {user?.displayName}
-                </li>
+
                 <li> <button onClick={handleLogOut} className='btn btn-ghost'>Log out</button></li></> : <> <li>   <NavLink to='/login'>Login</NavLink></li></>
         }
     </React.Fragment>
