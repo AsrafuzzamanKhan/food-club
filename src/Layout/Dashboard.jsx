@@ -30,10 +30,10 @@ const Dashboard = () => {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink> <FaUtensils></FaUtensils> Add item</NavLink>
+                                <NavLink to='/dashboard/addItem'> <FaUtensils></FaUtensils> Add Item</NavLink>
                             </li>
                             <li>
-                                <NavLink> <FaSitemap></FaSitemap>
+                                <NavLink to='/dashboard/manageItems'> <FaSitemap></FaSitemap>
                                     Manage Items
                                 </NavLink>
                             </li>

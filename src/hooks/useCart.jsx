@@ -11,21 +11,10 @@ const useCart = () => {
     const { data: cart = [], refetch } = useQuery({
         queryKey: ['carts', user?.email],
         enabled: !loading,
-        // queryFn: async () => {
-        //     const res = await fetch(`http://localhost:5000/carts?email=${user?.email}`
-        //         , {
-        //             headers: {
-        //                 authorization: `bearer ${token}`
-        //             }
-        //         })
-        //     if (!res.ok) {
-        //         throw new Error('Network res was not ok')
-        //     }
-        //     return res.json()
-        // },
+
         queryFn: async () => {
             const res = await axiosSecure(`/carts?email=${user?.email}`)
-            console.log('res from axios ', res)
+            // console.log('res from axios ', res)
 
             return res.data;
         },
