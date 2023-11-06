@@ -47,6 +47,13 @@ const Dashboard = () => {
                                     <FaUsers></FaUsers> Manage All USers
                                 </NavLink>
                             </li>
+                            <li><NavLink to='/dashboard/mycart'> <FaShoppingCart />Cart
+                                <div className="badge badge-secondary">
+
+                                    + {cart?.length || 0}
+                                </div>
+
+                            </NavLink></li>
 
                         </> : <>
                             <li><NavLink to='/dashboard/home'><FaHome /> User Home</NavLink></li>
