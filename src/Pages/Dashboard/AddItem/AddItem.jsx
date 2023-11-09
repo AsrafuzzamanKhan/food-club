@@ -46,8 +46,6 @@ const AddItem = () => {
     console.log(img_hosting_token)
     return (
 
-
-
         <div className=" w-full flex flex-col ">
             <SectionTitle subHeading='Whats new' heading='Add an Item'></SectionTitle>
             <div className="border w-full p-12  flex items-center justify-center">
@@ -112,6 +110,7 @@ const AddItem = () => {
                 </form>
             </div>
         </div>
+
 
     );
 };
