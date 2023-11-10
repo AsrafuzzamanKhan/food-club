@@ -11,7 +11,7 @@ const AdminRoute = ({ children }) => {
     if (loading || isAdminLoading) {
         return <span className="loading loading-spinner loading-lg"></span>
     }
-    if (user || isAdmin) {
+    if (user && isAdmin) {
         return children
     }
     return <Navigate to='/' state={{ from: location }} replace></Navigate>

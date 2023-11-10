@@ -10,7 +10,7 @@ import SocialLogin from '../Shared/SocialLogin/SocialLogin';
 
 const Login = () => {
 
-    const [disableLogin, setDisableLogin] = useState(true)
+    const [setDisableLogin] = useState(true)
     const { signIn } = useContext(AuthContext)
     // navigate user 
     const navigate = useNavigate();
