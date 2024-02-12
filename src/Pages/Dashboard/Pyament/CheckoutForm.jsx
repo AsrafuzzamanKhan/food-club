@@ -13,7 +13,7 @@ const CheckoutForm = ({ price, cart, refetch }) => {
     const [clientSecret, setClientSecret] = useState("");
     const [processing, setProcessing] = useState(false);
     const [transactionId, setTransactionId] = useState('');
-    const [cardReset, setCardReset] = useState('')
+    // const [cardReset, setCardReset] = useState('')
 
     const [axiosSecure] = useAxiosSecure()
     useEffect(() => {

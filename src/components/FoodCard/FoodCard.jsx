@@ -15,7 +15,7 @@ const FoodCard = ({ item }) => {
 
         if (user && user.email) {
             const cartItem = { menuItemId: _id, name, price, image, email: user.email }
-            fetch('https://food-club-server-ten.vercel.app/carts', {
+            fetch('https://food-club-server-seven.vercel.app/carts', {
                 method: "POST",
                 headers: {
                     'content-type': 'application/json'

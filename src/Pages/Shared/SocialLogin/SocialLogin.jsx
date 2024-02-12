@@ -21,7 +21,7 @@ const SocialLogin = () => {
                 console.log('saveUser', saveUser)
 
 
-                fetch('https://food-club-server-ten.vercel.app/users', {
+                fetch('https://food-club-server-seven.vercel.app/users', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'

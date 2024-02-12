@@ -5,7 +5,7 @@ import axios from "axios";
 import useAuth from "./useAuth";
 
 const axiosSecure = axios.create({
-    baseURL: 'https://food-club-server-ten.vercel.app',
+    baseURL: 'https://food-club-server-kappa.vercel.app',
 });
 
 const useAxiosSecure = () => {

@@ -54,7 +54,7 @@ const Navbar = () => {
                             {menuItems}
                         </ul>
                     </div>
-                    <NavLink to='/' className=' text-2xl font-bold uppercase'> Food Panda</NavLink>
+                    <NavLink to='/' className=' text-2xl font-bold uppercase'> Food club</NavLink>
 
                 </div>
                 <div className="navbar-center hidden lg:flex">

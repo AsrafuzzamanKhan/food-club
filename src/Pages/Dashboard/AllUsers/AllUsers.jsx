@@ -19,7 +19,7 @@ const AllUsers = () => {
 
     const handleMakeAdmin = user => {
         console.log(user._id)
-        fetch(`https://food-club-server-ten.vercel.app/users/admin/${user._id}`, {
+        fetch(`https://food-club-server-seven.vercel.app/users/admin/${user._id}`, {
             method: 'PATCH'
         })
             .then(res => res.json())
