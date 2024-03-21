@@ -16,43 +16,45 @@ import slide5 from '../../../assets/home/slide5.jpg'
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 const Category = () => {
     return (
-        <section>
-            <SectionTitle heading={"Order Online"} subHeading={"From 11.00am to 10.00pm"}></SectionTitle>
-            <Swiper
-                slidesPerView={4}
-                spaceBetween={20}
-                // centeredSlides={true}
-                pagination={{
-                    clickable: true,
-                }}
-                modules={[Pagination]}
-                className="mySwiper mb-24"
+        <div className='container mx-auto hidden md:block'>
+            <section className=' mb-12 '>
+                <SectionTitle heading={"Order Online"} subHeading={"From 11.00am to 10.00pm"}></SectionTitle>
+                <Swiper
+                    slidesPerView={4}
+                    spaceBetween={12}
+                    // centeredSlides={true}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper "
 
-            >
-                <SwiperSlide>
-                    <img src={slide1} alt="" className='' />
-                    <h3 className='text-4xl text-center text-white -mt-16'>Salads</h3>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide2} alt="" />
-                    <h3 className='text-4xl text-center text-white -mt-16'>Pizza</h3>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide3} alt="" />
-                    <h3 className='text-4xl text-center text-white -mt-16'>Soups</h3>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide4} alt="" />
-                    <h3 className='text-4xl text-center text-white -mt-16'>Cake</h3>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide5} alt="" />
-                    <h3 className='text-4xl text-center text-white -mt-16'>Salads</h3>
-                </SwiperSlide>
+                >
+                    <SwiperSlide className=''>
+                        <img src={slide1} alt="" className='rounded-lg relative blur-[2px]' />
+                        <h3 className='text-3xl  text-black absolute bottom-4 translate-x-20 bg-gray-100 p-2 rounded uppercase'>Salads</h3>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={slide2} alt="" className='rounded-lg relative blur-[2px]' />
+                        <h3 className='text-3xl  text-black absolute bottom-4 translate-x-20 bg-gray-100 p-2 rounded uppercase'>Pizza</h3>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={slide3} alt="" className='rounded-lg relative blur-[2px]' />
+                        <h3 className='text-3xl  text-black absolute bottom-4 translate-x-20 bg-gray-100 p-2 rounded uppercase'>Soups</h3>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={slide4} alt="" className='rounded-lg relative blur-[2px]' />
+                        <h3 className='text-3xl  text-black absolute bottom-4 translate-x-20 bg-gray-100 p-2 rounded uppercase'>Cake</h3>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={slide5} alt="" className='rounded-lg relative blur-[2px]' />
+                        <h3 className='text-3xl  text-black absolute bottom-4 translate-x-20 bg-gray-100 p-2 rounded uppercase'>Salads</h3>
+                    </SwiperSlide>
 
 
-            </Swiper>
-        </section>
+                </Swiper>
+            </section>
+        </div >
     );
 };
 

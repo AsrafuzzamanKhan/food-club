@@ -13,20 +13,20 @@ const Reviews = () => {
 
     const [reviews, setReviews] = useState([])
     useEffect(() => {
-        fetch('https://food-club-server-seven.vercel.app/reviews')
+        fetch('http://localhost:5000/reviews')
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])
     return (
-        <div className='my-20'>
+        <div className='container mx-auto my-12'>
             <SectionTitle heading={"Reviews"} subHeading={"What Our Client Says"}></SectionTitle>
-            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+            <Swiper navigation={true} modules={[Navigation]} className="mySwiper ">
 
                 {
                     reviews.map(review => <SwiperSlide key={review._id}
 
                     >
-                        <div className='flex flex-col items-center leading-10	'>
+                        <div className='flex flex-col items-center leading-8	mx-12 md:mx-0'>
                             <Rating
                                 style={{ maxWidth: 180 }}
                                 value={review.rating}
